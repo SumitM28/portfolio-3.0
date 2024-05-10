@@ -1,33 +1,116 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* 
+body{
+  background: black;
+} */
+
+.home_shadow{
+  text-shadow: 0px 2px #a772fd;
+  
+}
+.about_text_shadow{
+  text-shadow: 0px 2px #f1c40f;
+}
+.about_shadow{
+  box-shadow: 15px -15px #1d4542;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.project_text_shadow{
+  text-shadow: 0px 2px #bc67ce ;
+}
+
+.services_text_shadow{
+  text-shadow: 0px 3px #67c0ce ;
+}
+.contact_text_shadow{
+  text-shadow: 0px 2px #2fce84 ;
+  
+}
+
+@media (min-width: 640px) { 
+  .home_shadow{
+      text-shadow: 0px 3px #a772fd;
+      
+  }
+  .about_text_shadow{
+      text-shadow: 0px 3px #f1c40f;
+  }
+  .project_text_shadow{
+      text-shadow: 0px 3px #bc67ce ;
+  }
+  
+  .services_text_shadow{
+      text-shadow: 0px 3px #67c0ce ;
+  }
+  .contact_text_shadow{
+      text-shadow: 0px 3px #2fce84 ;
+      
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width: 768px) { 
+  .home_shadow{
+      text-shadow: 0px 4px #a772fd;
+      
+  }
+  .about_text_shadow{
+      text-shadow: 0px 4px #f1c40f;
+  }
+  .project_text_shadow{
+      text-shadow: 0px 4px #bc67ce ;
+  }
+  
+  .services_text_shadow{
+      text-shadow: 0px 4px #67c0ce ;
+  }
+  .contact_text_shadow{
+      text-shadow: 0px 4px #2fce84 ;
+      
   }
 }
+
+
+@media (min-width: 1024px) { 
+  .home_shadow{
+      text-shadow: 0px 5px #a772fd;
+      
+  }
+  .about_text_shadow{
+      text-shadow: 0px 5px #f1c40f;
+  }
+  .project_text_shadow{
+      text-shadow: 0px 5px #bc67ce ;
+  }
+  
+  .services_text_shadow{
+      text-shadow: 0px 5px #67c0ce ;
+  }
+  .contact_text_shadow{
+      text-shadow: 0px 5px #2fce84 ;
+      
+  }
+}
+
+
+::-webkit-scrollbar{
+  width: 8px;
+  /* background-color: rgb(82, 82, 82); */
+}
+
+::-webkit-scrollbar-thumb{
+  width: 8px;
+  background-color:  rgb(124, 118, 118);
+  border-radius: 10px;
+} 
