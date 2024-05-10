@@ -7,7 +7,7 @@ import { skills, skillsData, experiences } from "../../../utils/data";
 
 function About() {
   const [currSkill, setCurrSkill] = useState<string>("Programming Languages");
-  const [skillsDataSpecific, setSkillsDataSpecific] = useState([]);
+  const [skillsDataSpecific, setSkillsDataSpecific] = useState<any>([]);
 
   useEffect(() => {
     setSkillsDataSpecific(skillsData[currSkill]);
@@ -23,11 +23,11 @@ function About() {
             </h1>
 
             <p className="text-slate-400 text-base sm:text-lg md:text-xl mt-5 animate__animated animate__fadeInUp">
-              Hi, I'm Sumit Mahour, a fullstack and mobile application developer
+              Hi, I&#39;m Sumit Mahour, a fullstack and mobile application developer
               dedicated to crafting seamless, innovative, and user-focused
               digital solutions. With over 1 years of hands-on experience in the
-              tech realm, I'm always on the lookout for fresh and creative
-              avenues to transform my clients's ideas into reality.
+              tech realm, I&#39;m always on the lookout for fresh and creative
+              avenues to transform my clients&#39;s ideas into reality.
             </p>
             <p className="text-slate-400 text-base sm:text-lg md:text-xl mt-3 animate__animated animate__fadeInUp">
               I firmly believe that the essence of development surpasses coding
@@ -35,7 +35,7 @@ function About() {
               intuitive, delightful encounters for users.
             </p>
             <p className="text-slate-400 text-base sm:text-lg md:text-xl mt-3 animate__animated animate__fadeInUp">
-              Whether I'm immersed in architecting a web application, crafting a
+              Whether I&#39;m immersed in architecting a web application, crafting a
               responsive mobile app, or diving into any other digital venture, I
               consistently channel my drive for technical brilliance and
               user-centric philosophy into every endeavor. Anticipating the
@@ -78,7 +78,7 @@ function About() {
 
           <div className="my-10 w-full">
             <div className=" flex gap-10 justify-center max-w-2xl mx-auto flex-wrap">
-              {skillsDataSpecific?.map((item, idx) => (
+              {skillsDataSpecific?.map((item:any, idx:number) => (
                 <div
                   key={idx}
                   className="w-28 h-20 bg-white rounded-md p-2 flex flex-col justify-center items-center gap-1"

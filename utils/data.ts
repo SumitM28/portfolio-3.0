@@ -25,7 +25,7 @@ export const skills = [
   },
 ];
 
-export const skillsData = {
+export const skillsData:any = {
   "Programming Languages": [
     {
       id: 1,
