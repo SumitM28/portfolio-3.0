@@ -4,10 +4,11 @@ import React, { useEffect, useState } from "react";
 import "animate.css";
 import { GoDotFill } from "react-icons/go";
 import { skills, skillsData, experiences } from "../../../utils/data";
+import { Skill } from "../../../utils/types";
 
 function About() {
   const [currSkill, setCurrSkill] = useState<string>("Programming Languages");
-  const [skillsDataSpecific, setSkillsDataSpecific] = useState<any>([]);
+  const [skillsDataSpecific, setSkillsDataSpecific] = useState<Skill[]>([]);
 
   useEffect(() => {
     setSkillsDataSpecific(skillsData[currSkill]);
@@ -23,11 +24,12 @@ function About() {
             </h1>
 
             <p className="text-slate-400 text-base sm:text-lg md:text-xl mt-5 animate__animated animate__fadeInUp">
-              Hi, I&#39;m Sumit Mahour, a fullstack and mobile application developer
-              dedicated to crafting seamless, innovative, and user-focused
-              digital solutions. With over 1 years of hands-on experience in the
-              tech realm, I&#39;m always on the lookout for fresh and creative
-              avenues to transform my clients&#39;s ideas into reality.
+              Hi, I&#39;m Sumit Mahour, a fullstack and mobile application
+              developer dedicated to crafting seamless, innovative, and
+              user-focused digital solutions. With over 1 years of hands-on
+              experience in the tech realm, I&#39;m always on the lookout for
+              fresh and creative avenues to transform my clients&#39;s ideas
+              into reality.
             </p>
             <p className="text-slate-400 text-base sm:text-lg md:text-xl mt-3 animate__animated animate__fadeInUp">
               I firmly believe that the essence of development surpasses coding
@@ -35,10 +37,10 @@ function About() {
               intuitive, delightful encounters for users.
             </p>
             <p className="text-slate-400 text-base sm:text-lg md:text-xl mt-3 animate__animated animate__fadeInUp">
-              Whether I&#39;m immersed in architecting a web application, crafting a
-              responsive mobile app, or diving into any other digital venture, I
-              consistently channel my drive for technical brilliance and
-              user-centric philosophy into every endeavor. Anticipating the
+              Whether I&#39;m immersed in architecting a web application,
+              crafting a responsive mobile app, or diving into any other digital
+              venture, I consistently channel my drive for technical brilliance
+              and user-centric philosophy into every endeavor. Anticipating the
               chance to infuse my expertise and enthusiasm into your upcoming
               project.
             </p>
@@ -78,7 +80,7 @@ function About() {
 
           <div className="my-10 w-full">
             <div className=" flex gap-10 justify-center max-w-2xl mx-auto flex-wrap">
-              {skillsDataSpecific?.map((item:any, idx:number) => (
+              {skillsDataSpecific?.map((item: any, idx: number) => (
                 <div
                   key={idx}
                   className="w-28 h-20 bg-white rounded-md p-2 flex flex-col justify-center items-center gap-1"
@@ -140,8 +142,8 @@ function About() {
             Education & Courses
           </h1>
 
-          <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 mt-12 md:px-6 gap-6">
-            <div className="w-full h-full bg-slate-500 rounded-md px-4 md:px-8 py-4">
+          <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 mt-12 md:px-6 gap-10">
+            <div className="w-full h-full bg-gradient-to-t from-[#6C22A6] via-[#6962AD]  to-[#83C0C1] rounded-md px-4 md:px-8 py-4">
               <h1 className="text-black text-3xl font-bold mt-2">
                 B.Tech in Electronics & Communication
               </h1>
@@ -161,7 +163,7 @@ function About() {
                 innovation.
               </p>
             </div>
-            <div className="w-full h-full bg-slate-500 rounded-md px-4 md:px-8 py-4">
+            <div className="w-full h-full bg-gradient-to-t from-[#6C22A6] via-[#6962AD]  to-[#83C0C1] rounded-md px-4 md:px-8 py-4">
               <h1 className="text-black text-3xl font-bold mt-2">
                 Frontend Development Course
               </h1>
