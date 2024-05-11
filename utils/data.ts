@@ -1,3 +1,5 @@
+import { SkillsData, projectDataType } from "./types";
+
 export const skills = [
   {
     id: 1,
@@ -25,7 +27,18 @@ export const skills = [
   },
 ];
 
-export const skillsData:any = {
+export const projectCategories = [
+  {
+    id: 1,
+    name: "Websites",
+  },
+  {
+    id: 2,
+    name: "Mobile Apps",
+  },
+];
+
+export const skillsData:SkillsData = {
   "Programming Languages": [
     {
       id: 1,
@@ -240,5 +253,78 @@ export const experiences = [
         desc: " By implementing the best SEO practices in web development, we were able to achieve a 35% increase in organic website traffic.",
       },
     ],
+  },
+];
+
+
+export const webProjects:projectDataType[] = [
+  {
+    name: "Hotel Booking Website",
+    category: "React, Node, Express, MongoDB, Redux, etc.",
+    description:
+      "This is an hotel booking project built using the MERN stack (MongoDB, Express, React, Node.js, Hooks). The project includes a backend server, a front-end client, and a database.",
+    github: "https://github.com/SumitM28/Booking-App",
+    live: "",
+    img: "/images/projects/hotel.png",
+  },
+
+  {
+    name: "E-Commerce Website",
+    category: "Fullstack (MERN) Project",
+    description:
+      "This is an E-commerce project built using the MERN stack (MongoDB, Express, React, Node.js, Redux). The project includes a backend server, a front-end client, and a database.",
+    github: "https://github.com/SumitM28/E-Commerce-App",
+    live: "",
+    img: "/images/projects/ecommerce.png",
+  },
+
+  {
+    name: "Food Website",
+    category: "Frontend Project",
+    description:
+      "This is a responsive Frontend website. It includes such categorynologies like HTML, CSS, JavaScript etc.",
+    github: "https://github.com/SumitM28/Food-App",
+    live: "https://sumit-food.netlify.app/",
+    img: "/images/projects/food.png",
+  },
+
+  {
+    name: "Music Player",
+    category: "Frontend Project",
+    description:
+      "This is a responsive music player website. It includes such categorynologies like HTML, CSS, JavaScript etc.",
+    github: "https://github.com/SumitM28/music-player",
+    live: "https://64d60cae8e0cde4defaa22e7--poetic-starlight-e17d99.netlify.app/",
+    img: "/images/projects/music.png",
+  },
+];
+
+export const appProjects:projectDataType[] = [
+  {
+    name: "Job Search App",
+    category: "Android Application",
+    description:
+      "This is an Job App like indeed and LinkedIn built using the React Native and expo CLI. The project includes a front-end client, which fetching data from an API (Rapid Api).",
+    github: "https://github.com/SumitM28/Job-App/",
+    live: "https://expo.dev/@sumitm28/Job_app?servicecategory=classic&distribution=expo-go",
+    img: "/images/projects/job.jpg",
+  },
+  {
+    name: "Uber Eats Clone",
+    category: "Android Application",
+    description:
+      "UberEats is an on-demand food delivery like Swiggy and Zomato built using React Native and expo CLI. This project based on front-end UI. and for the information i use the static data",
+    github: "https://github.com/SumitM28/uber-eats-clone",
+    live: "",
+    img: "/images/projects/uber.jpg",
+  },
+  {
+    name: "Invoice Application",
+    category: "Android Application",
+    description:
+      "This is a android application designed to help businesses and individuals create, manage, and send invoices to clients or customers. Which contains the categorynologies like React Native, React etc. ",
+    github: "https://github.com/SumitM28/Invoice-application",
+    live: "",
+    img: "/images/projects/invoice.png",
   },
 ];
