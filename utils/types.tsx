@@ -1,3 +1,4 @@
+import { z } from "zod";
 export type Skill = {
   id: number;
   name: string;
@@ -5,7 +6,7 @@ export type Skill = {
 };
 
 export type SkillsData = {
-    [x:string]:Skill[]
+  [x: string]: Skill[];
 };
 
 export type projectDataType = {
@@ -16,3 +17,18 @@ export type projectDataType = {
   live: string;
   img: string;
 };
+
+export type formData = {
+  email: string;
+  message: string;
+  name: string;
+  phone: string;
+};
+
+// Define schema using Zod
+export const formSchema = z.object({
+  name: z.string().min(2).max(50),
+  email: z.string().email(),
+  phone: z.string().min(7).max(15),
+  message: z.string().min(10).max(500),
+});
