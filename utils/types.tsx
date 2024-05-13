@@ -25,6 +25,13 @@ export type formData = {
   phone: string;
 };
 
+export type userInfoType={
+  name:string,
+  phone:string,
+  email:string,
+  message:string
+}
+
 // Define schema using Zod
 export const formSchema = z.object({
   name: z.string().min(2).max(50),

@@ -10,7 +10,7 @@ import { IoIosSend } from "react-icons/io";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { formData, formSchema } from "../../../utils/types";
-
+import toast from "react-hot-toast"
 
 // Type definition for form data
 type FormData = z.infer<typeof formSchema>;
@@ -22,8 +22,17 @@ function ContactMe() {
     formState: { errors },
   } = useForm<FormData>();
 
-  const onSubmit: SubmitHandler<FormData> = (data:formData, event:any) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormData> = async (data:formData, event:any) => {
+    fetch('/api/contactme',{
+      method:'POST',
+      body:JSON.stringify(data),
+    }).then(res => res.json()).then(res => {
+      if(res.success){
+        toast.success(res?.message);
+      }else{
+        toast.error(res?.message);
+      }
+    })
     event?.target.reset();
   };
   return (
