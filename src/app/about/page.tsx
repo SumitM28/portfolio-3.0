@@ -47,13 +47,13 @@ function About() {
           </div>
           <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] relative md:mx-0 !mx-5">
             <Image
-              src={"/images/about_img.jpeg"}
+              src={"/images/aboutimg.jpeg"}
               alt="about_img"
               fill={true}
               className="w-full h-full absolute z-10 animate__bounceInDown animate__animated"
             />
 
-            <div className="w-full h-full absolute bg-yellow-300 top-5 left-5 z-0 animate__animated animate__bounceInRight" />
+            <div className="w-full h-full absolute bg-[#F6F5F2] top-5 left-5 z-0 animate__animated animate__bounceInRight" />
           </div>
         </div>
 
@@ -143,14 +143,14 @@ function About() {
           </h1>
 
           <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 mt-12 md:px-6 gap-10">
-            <div className="w-full h-full bg-gradient-to-t from-[#6C22A6] via-[#6962AD]  to-[#83C0C1] rounded-md px-4 md:px-8 py-4">
+            <div className="w-full h-full bg-[#F6F5F2] rounded-md px-4 md:px-8 py-4">
               <h1 className="text-black text-3xl font-bold mt-2">
                 B.Tech in Electronics & Communication
               </h1>
               <h2 className="text-black font-semibold text-2xl mt-1">
                 2020 - 2024 | RBSTEC
               </h2>
-              <p className="text-xl text-slate-300 mt-3 text-justify">
+              <p className="text-xl text-slate-700 mt-3 text-justify">
                 In the Electronics & Communication course, I immersed myself in
                 the fascinating realm of electrical engineering and information
                 transmission. From mastering the principles of circuit analysis
@@ -163,14 +163,14 @@ function About() {
                 innovation.
               </p>
             </div>
-            <div className="w-full h-full bg-gradient-to-t from-[#6C22A6] via-[#6962AD]  to-[#83C0C1] rounded-md px-4 md:px-8 py-4">
+            <div className="w-full h-full bg-[#F6F5F2] rounded-md px-4 md:px-8 py-4">
               <h1 className="text-black text-3xl font-bold mt-2">
                 Frontend Development Course
               </h1>
               <h2 className="text-black font-semibold text-2xl mt-1">
                 2022 - 2023 | Relevel By Unacademy
               </h2>
-              <p className="text-xl text-slate-300 mt-3 text-justify">
+              <p className="text-xl text-slate-700 mt-3 text-justify">
                 In the frontend course, I delved into cutting-edge technologies
                 like React.js, harnessing its power to build interactive and
                 scalable user interfaces. With TypeScript, I learned to enhance

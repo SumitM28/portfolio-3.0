@@ -30,7 +30,7 @@ export default function Home() {
   return (
    <section className="w-full min-h-screen  relative bg-black">
     <Canvas 
-    className={`w-full h-screen bg-transparent ${isRotating ? "cursor-grabbing":"cursor-grab"}`}
+    className={`w-full h-screen bg-transparent hidden md:block ${isRotating ? "cursor-grabbing":"cursor-grab"}`}
     camera={{near:0.1, far:1000}}
     style={{height:'100vh'}}
     >
@@ -48,7 +48,7 @@ export default function Home() {
       </Suspense>
     </Canvas>
 
-    <div className="h-screen max-w-screen-xl mx-auto px-4 py-3">
+    <div className="h-screen max-w-screen-xl mx-auto px-4 py-3 mt-5 md:mt-0">
         <div className=" flex flex-col md:flex-row  h-full gap-5 md:gap-0">
           <div className="flex-1 flex flex-col  justify-center">
             <h1 className="text-[clamp(3rem,20vmin,20rem)] font-extrabold leading-none tracking-tighter text-slate-300">Sumit</h1>

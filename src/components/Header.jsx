@@ -43,7 +43,7 @@ function Header() {
           // className="text-xl h-14 w-14 bg-white flex items-center justify-center rounded-full  cursor-pointer"
           onClick={() => window.location.reload()}
         >
-          <p className="text-black text-xl font-semibold">Sumit Mahour</p>
+          <p className="text-black text-2xl cursor-pointer  metrophobic-regular">Sumit Mahour</p>
         </div>
 
         {/* page links */}

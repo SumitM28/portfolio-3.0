@@ -50,7 +50,7 @@ function Projects() {
             data.map((project, idx) => (
               <div
                 key={idx}
-                className="w-full h-full bg-gradient-to-t from-[#6C22A6] via-[#6962AD]  to-[#83C0C1] rounded-md px-4 md:px-8 py-4"
+                className="w-full h-full bg-[#F6F5F2] rounded-md px-4 md:px-8 py-4"
               >
                 <div className={`w-full  ${currProjectCategory==="Websites"?"h-[250px]":"h-[75vh]"}  relative`}>
                   <Image
@@ -90,7 +90,7 @@ function Projects() {
                       <PiLinkSimpleBold size={20} fill="white" />
                     </Link>}
                   </div>
-                  <p className="text-xl text-slate-300 mt-3 text-justify">
+                  <p className="text-xl text-slate-700 mt-3 text-justify">
                     {project.description}
                   </p>
                 </div>
